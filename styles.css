@@ -493,7 +493,17 @@ h2 {
   }
 
   .instagram-content {
-    max-width: 90%;
+    width: 100%;
+  }
+
+  .gallery-container li {
+    width: calc(50% - 40px);
+    margin: 0 20px;
+    max-width: 100%;
+  }
+
+  .gallery-container li:last-of-type {
+    display: none;
   }
 
   .links-and-contact {
@@ -574,7 +584,8 @@ h2 {
 
   .gallery-container li {
     width: calc(50% - 20px);
-    margin: 0 auto;
+    margin: 0 10px;
+    max-width: 100%;
   }
 
   .gallery-container li:last-of-type {
