@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="Matt Donaldson">
+  <meta name="description" content="Project 1 for HackerYou Bootcamp, responsive one page website">
+  <meta name="keywords" content="HackerYou, HTML, CSS, responsive, bootcamp, Hangry Tummy, food, burgers">
+  
+  <link href="https://fonts.googleapis.com/css?family=Catamaran|Montserrat:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/99ab144771.js"></script>
+
+  <title>Hangry Tummy</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <!--Navigation Bar-->
+    <nav class="nav-bar" id="heading-nav">
+      <ul>
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <!--Header Image and Text-->
+    <header>
+      <div class="header-container clearfix">
+        <h1>Hangry Tummy</h1>
+        <div class="heading-social-links">
+          <ul>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-snapchat-ghost"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!--Main Content-->
+    <main>
+      <section class="main-content clearfix" id="menu">
+        <div class="main-container-first">
+          <img src="assets/right-photo.jpg" alt="closeup of a hamburger with an egg on it and french fries">
+        </div>
+        <div class="main-container-first">
+          <div class="menu-text">
+            <h2>New To Our Menu</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium repellat non magnam sunt in labore minima. Sequi quasi magnam repellendus repellat sit fugit laudantium harum sint ducimus mollitia architecto, modi, cupiditate velit pariatur. Voluptates, dolore ad?</p>
+            <button class="read-more">Read More</button>
+          </div>
+        </div>            
+      </section>
+
+      <section class="main-content clearfix" id="experience">
+        <div class="main-container-second">
+          <img src="assets/left-photo.jpg"
+            alt="closeup of dishes including french fries, eggs benedict, and French onion soup">
+        </div>
+        <div class="main-container-second">
+          <div class="experience-text">
+            <h2>Full Experience</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima facere cupiditate repudiandae et nemo sit, nam vitae animi, cumque aliquid beatae ab. Aut, obcaecati alias enim modi non repellendus rerum autem dicta velit doloremque temporibus repellat!</p>
+            <button class="read-more">Read More</button>
+          </div>
+        </div>        
+      </section>
+
+      <section class="desserts-content clearfix" id="desserts">
+        <div class="desserts-container">
+          <img src="assets/square-image.jpg" alt="Four selections of icecream in containers and on plates">   
+        </div>     
+        <div class="desserts-container clearfix">
+          <div class="desserts-text">          
+            <h2>Desserts</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam cupiditate tempora distinctio, dolorem aspernatur harum reiciendis possimus voluptates architecto adipisci debitis est consectetur voluptas assumenda vel id necessitatibus minima nostrum eveniet iste illo, ullam mollitia! Quidem reiciendis quod suscipit nostrum ratione enim laboriosam, ipsam autem illo voluptatum? Ipsam ea quasi deleniti pariatur distinctio praesentium facilis rerum ratione ad magnam harum amet quid dolor valaras.</p>
+            <button class="read-more">Read More</button>
+          </div>
+        </div>      
+      </section>
+      <!--Nav Bar for Main Content-->
+      <nav class="middle-nav-bar">
+        <ul class="fa-ul">
+          <li><a href="#"><i class="fas fa-location-arrow"></i><p>Locations</p></a></li>
+          <li><a href="#"><i class="fas fa-utensils"></i><p>Menu</p></a></li>
+          <li><a href="#"><i class="fas fa-phone"></i><p>Reach Out</p></a></li>
+        </ul>
+      </nav>
+      <!--Instagram Section-->
+      <section class="instagram-content clearfix">
+        <h2>The Gram</h2>
+        <ul class="gallery-container clearfix">
+          <li><a href="#"><img src="assets/gallery-photo-1.jpg" alt="Crispy duck with parsley"></a></li>
+          <li><a href="#"><img src="assets//gallery-photo-2.jpg" alt="salad plate with avocado, cheese, lettuce, and vegetables"></a></li>
+          <li><a href="#"><img src="assets/gallery-photo-3.jpg" alt="Chicken wings with sesame seeds and coleslaw">
+          </a></li>
+        </ul>
+      </section>
+    </main> <!--End of Main Content-->
+
+    <!--Footer Section-->
+    <footer class="links-and-contact clearfix">
+      <nav class="nav-bar" id="footer-nav">
+        <ul>
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-contact">
+        <h2>Contact</h2>
+        <address>
+          <p>info@email.com | 123-456-7890</p>
+          <p>123 Some Road, Toronto, ON</p>
+          <p>A5A 5A5, Canada</p>
+        </address>
+      </div>
+
+      <div class="newsletter-form">
+        <h2>Stay Updated</h2>
+        <form action="#">
+          <label for="email">Subscribe to our newsletter to stay updated.</label>
+        
+          <div class="search-bar">
+            <input type="email" placeholder="email address" id="email" required>
+            <input type="submit" value="subscribe">
+          </div>
+        </form>
+      </div>
+    </footer>
+    <!--Copyright Notice-->
+    <footer class="copyright">
+      <p>Copyright &copy; 2019 HackerYou</p>
+    </footer>
+  </div> <!--End of wrapper-->
+
+</body>
+</html>
