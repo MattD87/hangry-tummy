@@ -26,6 +26,43 @@ body {
   line-height: 2.9rem;  
 }
 
+.skip-link {
+  position: absolute;
+  left: -1000px;
+  top: 5px;
+  z-index: 999;
+  background: #1f2022;
+  color: #fff;
+}
+
+.skip-link:focus {
+  left: 0;
+}
+
+.nav-bar a:focus, .heading-social-links a:focus {
+  border: 2px solid #1f2022;
+}
+
+button:focus, .desserts-text button:focus {
+  background: #1f2022;
+  color: #e75605;
+}
+
+.middle-nav-bar a:focus {
+  color: #1f2022;
+}
+
+input[type="email"]:focus {
+  border: 3px solid #e75605;
+  background: #1f2022;
+  color: #fff;
+}
+
+.search-bar input[type="submit"]:focus {
+  background: #1f2022;
+  color: #fff;
+}
+
 .wrapper {  
   margin: 0 auto;
   max-width: 1400px;
@@ -68,17 +105,6 @@ h2 {
   padding: 5px 15px;
 }
 
-.menu-toggle {
-  color: #1f2022;
-  font-size: 3rem;
-  padding: 20px;
-  border: none;
-  background: #fff;
-  display: block;
-  float: right;
-  visibility: hidden;
-}
-
 /* Nav Menu Styles */
 .nav-bar {  
   text-align: center;
@@ -97,16 +123,23 @@ h2 {
   color: #1f2022;
 }
 
-/* .nav-bar button {
-  display: none;
-} */
-
 .nav-bar a:hover {
   color: #e75605; 
 }
 
 .active a{
   color: #e75605;
+}
+
+.menu-toggle {
+  color: #1f2022;
+  font-size: 3rem;
+  padding: 20px;
+  border: none;
+  background: #fff;
+  display: block;
+  float: right;
+  visibility: hidden;
 }
 
 /* Header Styles */
