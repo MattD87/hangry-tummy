@@ -101,6 +101,7 @@ h2 {
   background-size: 50%;
   background-repeat: no-repeat;  
   background-position: left;
+  min-height: 200px;
   height: 100vh;
 }
 
@@ -174,7 +175,7 @@ h2 {
   padding-bottom: 5%;
 }
 
-.desserts-text button { /*Asked designer,this button has different background color on design doc */
+.desserts-text button {
   background: #f4f4f4;
 }
 
@@ -273,10 +274,14 @@ h2 {
 /* Media Queries */
 
 /* Portrait tablet and small desktops */
-@media (max-width: 940px){
+@media (max-height: 800px) and (max-width: 940px){
   body {
     font-size: 1.8rem;
     line-height: 2.6rem;
+  }
+
+  .header-container {
+    height: auto;
   }
 
   .heading-social-links {
@@ -288,6 +293,7 @@ h2 {
   h1 {
     font-size: 10rem;
     line-height: 10rem;
+    padding-bottom: 100px;
   }
 
   h2 {
@@ -340,10 +346,15 @@ h2 {
   }
 }
 /* Landscape phone to portrait tablet */
-@media (max-width: 768px){
+@media (max-height: 1024px) and (max-width: 768px){
   body {
     font-size: 1.6rem;
     line-height: 2.4rem;
+  }
+
+  .header-container {
+    height: auto;
+    padding: 50px 0;
   }
   
   .nav-bar {
@@ -353,12 +364,8 @@ h2 {
 
   .heading-social-links {
     position: fixed;
-    top: 30%;
+    top: 10%;
     right: 0;
-  }
-
-  .header-container {
-    height: 100vh;
   }
 
   .heading-social-links li {
@@ -368,6 +375,9 @@ h2 {
   h1 {
     font-size: 8rem;
     line-height: 8rem;
+    /* margin-bottom: 50px; */
+    padding-bottom: 100px;
+    margin: 0;
   }
 
   h2 {
@@ -410,8 +420,9 @@ h2 {
     font-size: 1.4rem;
   }  
 }
+
 /* Landscape phones and down */
-@media (max-width: 480px){
+@media (max-height: 640px) and (max-width: 480px){
   body {
     font-size: 1.4rem;
     line-height: 2rem;
@@ -424,7 +435,7 @@ h2 {
 
   .header-container {
     background-size: 65%;
-    height: 100vh;
+    height: auto;
   }
 
   .heading-social-links {
@@ -432,9 +443,10 @@ h2 {
   }
 
   h1 {
-    font-size: 6rem;
-    line-height: 6rem;
-    margin-top: 15%;
+    font-size: 5rem;
+    line-height: 4rem;
+    /* margin-top: 15%; */
+    margin: 0;
   }
 
   h2 {
@@ -523,6 +535,19 @@ h2 {
     width: 100%;
   }
 }
+
+/*Galaxy 5 Styling */
+@media (max-height:640px) and (max-width:360px) {
+
+  .header-container {
+    height: 280px;
+  }
+
+  h1 {
+    margin: 0;
+  }
+}
+
 /*Smallest Phone and down*/
 @media(max-width: 320px){
   body {
@@ -537,7 +562,7 @@ h2 {
 
   .header-container {
     background-size: 65%;
-    height: 280px;
+    height: auto;
     margin-bottom: 0;
   }
 
@@ -548,7 +573,8 @@ h2 {
   h1 {
     font-size: 4rem;
     line-height: 3rem;
-    margin-top: 10%;
+    /* margin-top: 10%; */
+    margin: 0;
   }
 
   h2 {
