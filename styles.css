@@ -66,7 +66,17 @@ h2 {
   border:3px solid #e75605;
   margin-top: 5%;
   padding: 5px 15px;
+}
 
+.menu-toggle {
+  color: #1f2022;
+  font-size: 3rem;
+  padding: 20px;
+  border: none;
+  background: #fff;
+  display: block;
+  float: right;
+  visibility: hidden;
 }
 
 /* Nav Menu Styles */
@@ -87,6 +97,10 @@ h2 {
   color: #1f2022;
 }
 
+/* .nav-bar button {
+  display: none;
+} */
+
 .nav-bar a:hover {
   color: #e75605; 
 }
@@ -101,7 +115,7 @@ h2 {
   background-size: 50%;
   background-repeat: no-repeat;  
   background-position: left;
-  min-height: 200px;
+  /* min-height: 200px; */
   height: 100vh;
 }
 
@@ -354,7 +368,7 @@ h2 {
 
   .header-container {
     height: auto;
-    padding: 50px 0;
+    padding-bottom: 50px;
   }
   
   .nav-bar {
@@ -375,7 +389,6 @@ h2 {
   h1 {
     font-size: 8rem;
     line-height: 8rem;
-    /* margin-bottom: 50px; */
     padding-bottom: 100px;
     margin: 0;
   }
@@ -433,6 +446,14 @@ h2 {
     line-height: 2rem;
   }
 
+  .nav-bar {
+    visibility: hidden;
+  }
+
+  .menu-toggle {
+    visibility: visible;
+  }
+
   .header-container {
     background-size: 65%;
     height: auto;
@@ -445,7 +466,7 @@ h2 {
   h1 {
     font-size: 5rem;
     line-height: 4rem;
-    /* margin-top: 15%; */
+    margin-top: 15%;
     margin: 0;
   }
 
@@ -540,7 +561,7 @@ h2 {
 @media (max-height:640px) and (max-width:360px) {
 
   .header-container {
-    height: 280px;
+    height: auto;
   }
 
   h1 {
