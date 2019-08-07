@@ -12,20 +12,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 .visuallyHidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}
 
-/* Global Styling  */
-
-html {
-  font-size: 62.5%;
-}
-
-body {  
-  font-family: 'Catamaran', sans-serif;
-  font-size: 2rem;
-  background: #fdfdfd;
-  color: #1f2022;
-  line-height: 2.9rem;  
-}
-
+/* Accesibility and Focus State Styling */
 .skip-link {
   position: absolute;
   left: -1000px;
@@ -39,11 +26,13 @@ body {
   left: 0;
 }
 
-.nav-bar a:focus, .heading-social-links a:focus {
+.nav-bar a:focus,
+.heading-social-links a:focus {
   border: 2px solid #1f2022;
 }
 
-button:focus, .desserts-text button:focus {
+button:focus,
+.desserts-text button:focus {
   background: #1f2022;
   color: #e75605;
 }
@@ -61,6 +50,19 @@ input[type="email"]:focus {
 .search-bar input[type="submit"]:focus {
   background: #1f2022;
   color: #fff;
+}
+
+/* Global Styling  */
+html {
+  font-size: 62.5%;
+}
+
+body {  
+  font-family: 'Catamaran', sans-serif;
+  font-size: 2rem;
+  background: #fdfdfd;
+  color: #1f2022;
+  line-height: 2.9rem;  
 }
 
 .wrapper {  
@@ -123,12 +125,8 @@ h2 {
   color: #1f2022;
 }
 
-.nav-bar a:hover {
+.active a, .nav-bar a:hover {
   color: #e75605; 
-}
-
-.active a{
-  color: #e75605;
 }
 
 .menu-toggle {
@@ -148,7 +146,6 @@ h2 {
   background-size: 50%;
   background-repeat: no-repeat;  
   background-position: left;
-  /* min-height: 200px; */
   height: 100vh;
 }
 
@@ -171,6 +168,7 @@ h2 {
   color: #1f2022;
 }
 
+/* Main Content Styling */
 .main-container-first, .main-container-second {
   width: 50%;  
 }
@@ -183,12 +181,8 @@ h2 {
   float: left;
 }
 
-.menu-text {
+.menu-text, .experience-text {
  padding: 15%;
-}
-
-.experience-text {
-  padding: 15%;
 }
 
 /* Desserts Styling */
@@ -276,7 +270,7 @@ h2 {
 /* Footer Styling */
 .links-and-contact {  
   clear:both;   
-  background: #f4f4f4;
+  background: #eee;
   padding: 3% 10%;
 }
 
@@ -284,12 +278,7 @@ h2 {
   padding-bottom: 7%;
 }
 
-.footer-contact {
-  float: left;
-  width: 50%;
-}
-
-.newsletter-form {
+.footer-contact, .newsletter-form {
   float: left;
   width: 50%;
 }
@@ -312,7 +301,7 @@ h2 {
 .copyright {
   clear: both;
   background: #000;
-  color: #949090;
+  color: #777;
   text-align: center;
   padding: 10px;
 }
@@ -472,6 +461,7 @@ h2 {
   body {
     font-size: 1.4rem;
     line-height: 2rem;
+    background: #fff; /*psd shows mobile with background of #fff when using color picker */
   }
 
   .nav-bar {
